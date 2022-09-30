@@ -9,23 +9,25 @@
 /* Begin PBXBuildFile section */
 		864A648128E593D700774A3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864A648028E593D700774A3F /* AppDelegate.swift */; };
 		864A648328E593D700774A3F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864A648228E593D700774A3F /* SceneDelegate.swift */; };
-		864A648528E593D700774A3F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864A648428E593D700774A3F /* ViewController.swift */; };
 		864A648828E593D700774A3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 864A648628E593D700774A3F /* Main.storyboard */; };
 		864A648B28E593D700774A3F /* coreDataDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 864A648928E593D700774A3F /* coreDataDemo.xcdatamodeld */; };
 		864A648D28E593D800774A3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 864A648C28E593D800774A3F /* Assets.xcassets */; };
 		864A649028E593D800774A3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 864A648E28E593D800774A3F /* LaunchScreen.storyboard */; };
+		864A649828E593FD00774A3F /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864A649728E593FD00774A3F /* TableViewController.swift */; };
+		86C2486928E6BFDF001C1CE0 /* extensionEditing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C2486828E6BFDF001C1CE0 /* extensionEditing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		864A647D28E593D700774A3F /* coreDataDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = coreDataDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		864A648028E593D700774A3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		864A648228E593D700774A3F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		864A648428E593D700774A3F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		864A648728E593D700774A3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		864A648A28E593D700774A3F /* coreDataDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = coreDataDemo.xcdatamodel; sourceTree = "<group>"; };
 		864A648C28E593D800774A3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		864A648F28E593D800774A3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		864A649128E593D800774A3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		864A649728E593FD00774A3F /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		86C2486828E6BFDF001C1CE0 /* extensionEditing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionEditing.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +60,49 @@
 		864A647F28E593D700774A3F /* coreDataDemo */ = {
 			isa = PBXGroup;
 			children = (
-				864A648028E593D700774A3F /* AppDelegate.swift */,
-				864A648228E593D700774A3F /* SceneDelegate.swift */,
-				864A648428E593D700774A3F /* ViewController.swift */,
-				864A648628E593D700774A3F /* Main.storyboard */,
-				864A648C28E593D800774A3F /* Assets.xcassets */,
-				864A648E28E593D800774A3F /* LaunchScreen.storyboard */,
-				864A649128E593D800774A3F /* Info.plist */,
+				86E871EC28E6D03C009D054C /* Views */,
+				86E871EB28E6D030009D054C /* Controllers */,
+				86E871ED28E6D044009D054C /* SupportingFiles */,
+				86E871EA28E6D028009D054C /* Extensions */,
 				864A648928E593D700774A3F /* coreDataDemo.xcdatamodeld */,
 			);
 			path = coreDataDemo;
+			sourceTree = "<group>";
+		};
+		86E871EA28E6D028009D054C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				86C2486828E6BFDF001C1CE0 /* extensionEditing.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		86E871EB28E6D030009D054C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				864A649728E593FD00774A3F /* TableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		86E871EC28E6D03C009D054C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				864A648628E593D700774A3F /* Main.storyboard */,
+				864A648E28E593D800774A3F /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		86E871ED28E6D044009D054C /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				864A648028E593D700774A3F /* AppDelegate.swift */,
+				864A648228E593D700774A3F /* SceneDelegate.swift */,
+				864A648C28E593D800774A3F /* Assets.xcassets */,
+				864A649128E593D800774A3F /* Info.plist */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,10 +176,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				864A648528E593D700774A3F /* ViewController.swift in Sources */,
 				864A648B28E593D700774A3F /* coreDataDemo.xcdatamodeld in Sources */,
 				864A648128E593D700774A3F /* AppDelegate.swift in Sources */,
 				864A648328E593D700774A3F /* SceneDelegate.swift in Sources */,
+				86C2486928E6BFDF001C1CE0 /* extensionEditing.swift in Sources */,
+				864A649828E593FD00774A3F /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,7 +329,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 59WWFG63NN;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = coreDataDemo/Info.plist;
+				INFOPLIST_FILE = coreDataDemo/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -321,7 +357,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 59WWFG63NN;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = coreDataDemo/Info.plist;
+				INFOPLIST_FILE = coreDataDemo/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
